@@ -3,13 +3,16 @@ package com.booking;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *creating Array list to add hotel name
+ */
 public class HotelReservation {
     private List<Hotel> hotelList = new ArrayList<>();
 
     /**
-     * creating addhotel mothod
+     * creating addHotel mothod
      */
-    public void addHotel(Hotel hotel){
+    public void addHotels(Hotel hotel){
         hotelList.add(hotel);
     }
 

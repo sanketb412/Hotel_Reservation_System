@@ -10,10 +10,10 @@ public class hotelReservationSystem {
      * testing for hotels with specific rate
      */
     @Test
-    public void name() {
+    public void giveHotelWhenRequiredShouldAdded1Hotel() {
         HotelReservation hotelReservation = new HotelReservation();
-        Hotel hotel = new Hotel("Lakewood", 110);  //testing for 1 hotel
-        hotelReservation.addHotel(hotel);
+        Hotel hotel = new Hotel("Lakewood", 110);  //testing for 1st hotel
+        hotelReservation.addHotels(hotel);
         List hotelList = hotelReservation.getHotels();
         Assertions.assertTrue(hotelList.contains(hotel));
     }
